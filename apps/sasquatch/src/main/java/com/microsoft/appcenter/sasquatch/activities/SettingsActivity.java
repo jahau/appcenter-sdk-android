@@ -307,6 +307,7 @@ public class SettingsActivity extends AppCompatActivity {
 
                 @Override
                 public void setEnabled(boolean enabled) {
+                    //test change
                     MainActivity.sSharedPreferences.edit().putBoolean(getString(R.string.appcenter_distribute_debug_state_key), enabled).apply();
                     Distribute.setEnabledForDebuggableBuild(enabled);
                 }
